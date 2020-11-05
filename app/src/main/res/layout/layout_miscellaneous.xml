@@ -2,30 +2,31 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layoutMiscellaneous"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/background_miscellaneous"
-    app:behavior_peekHeight="80dp"
+    app:behavior_peekHeight="@dimen/_80sdp"
     app:layout_behavior="@string/bottom_sheet_behavior">
 
     <TextView
         android:id="@+id/textMiscellanous"
         android:layout_width="match_parent"
-        android:layout_height="80sp"
+        android:layout_height="@dimen/_80sdp"
         android:fontFamily="@font/ubuntu_medium"
         android:gravity="center"
         android:includeFontPadding="false"
         android:text="Miscellaneous"
         android:textColor="@color/colorWhite"
-        android:textSize="20sp"/>
+        android:textSize="@dimen/_20sdp"/>
 
     <LinearLayout
         android:id="@+id/layoutNoteColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10sp"
+        android:layout_margin="@dimen/_10sdp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -36,14 +37,14 @@
 
             <View
                 android:id="@+id/viewColor1"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/background_note_color_1" />
 
             <ImageView
                 android:id="@+id/imageColor1"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:contentDescription="@string/app_name"
                 android:padding="10dp"
                 android:src="@drawable/ic_done"
@@ -57,14 +58,14 @@
 
             <View
                 android:id="@+id/viewColor2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/background_note_color_2" />
 
             <ImageView
                 android:id="@+id/imageColor2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:contentDescription="@string/app_name"
                 android:padding="10dp"
                 app:tint="@color/colorWhite" />
@@ -77,14 +78,14 @@
 
             <View
                 android:id="@+id/viewColor3"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/background_note_color_3" />
 
             <ImageView
                 android:id="@+id/imageColor3"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:contentDescription="@string/app_name"
                 android:padding="10dp"
                 app:tint="@color/colorWhite" />
@@ -97,14 +98,14 @@
 
             <View
                 android:id="@+id/viewColor4"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/background_note_color_4" />
 
             <ImageView
                 android:id="@+id/imageColor4"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:contentDescription="@string/app_name"
                 android:padding="10dp"
                 app:tint="@color/colorWhite" />
@@ -117,16 +118,16 @@
 
             <View
                 android:id="@+id/viewColor5"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/background_note_color_5" />
 
             <ImageView
                 android:id="@+id/imageColor5"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:contentDescription="@string/app_name"
-                android:padding="10dp"
+                android:padding="@dimen/_10sdp"
                 app:tint="@color/colorWhite" />
         </FrameLayout>
 
@@ -138,6 +139,34 @@
             android:text="Pick Color"
             android:textColor="@color/colorWhite"
             android:textSize="13dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutAddImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_image"
+            app:tint="@color/colorIcons" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:includeFontPadding="false"
+            android:text="@string/add_image"
+            android:textColor="@color/colorIcons"
+            android:textSize="@dimen/_12ssp"/>
+
     </LinearLayout>
 
 
